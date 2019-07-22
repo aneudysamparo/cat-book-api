@@ -1,10 +1,10 @@
 import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { CatsModule } from './cats/cats.module';
-import { TenantModule } from './common/tenants/tenant.module';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
+import { DatabaseModule } from './common/databases/database.module';
 
 @Module({
-  imports: [TenantModule, CatsModule],
+  imports: [DatabaseModule, CatsModule],
 })
 export class AppModule implements NestModule {
   configure(consumer: MiddlewareConsumer) {
