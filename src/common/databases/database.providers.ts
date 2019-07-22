@@ -1,7 +1,7 @@
 import * as mongoose from 'mongoose';
 import { REQUEST } from '@nestjs/core';
 import { Scope, NotFoundException } from '@nestjs/common';
-import { TenantsService } from '../../tenants/tenant.service';
+import { TenantsService } from '../tenants/tenant.service';
 
 
 export const databaseProviders = [

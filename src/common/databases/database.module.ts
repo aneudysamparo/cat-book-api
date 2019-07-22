@@ -1,6 +1,6 @@
 import { Module } from "@nestjs/common";
 import { databaseProviders } from "./database.providers";
-import { TenantModule } from "../../tenants/tenant.module";
+import { TenantModule } from "../tenants/tenant.module";
 
 
 @Module({

@@ -1,6 +1,6 @@
 import { Module, NestModule, MiddlewareConsumer } from '@nestjs/common';
 import { CatsModule } from './cats/cats.module';
-import { TenantModule } from './tenants/tenant.module';
+import { TenantModule } from './common/tenants/tenant.module';
 import { LoggerMiddleware } from './common/middleware/logger.middleware';
 
 @Module({
